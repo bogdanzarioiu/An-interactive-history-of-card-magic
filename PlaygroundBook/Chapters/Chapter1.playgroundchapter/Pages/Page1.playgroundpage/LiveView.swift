@@ -9,11 +9,16 @@ import UIKit
 import PlaygroundSupport
 
 // Instantiate a new instance of the live view from the book's auxiliary sources and pass it to PlaygroundSupport.
+var jokerImage: UIImageView!
+var jokerView = LiveViewController()
 
-var changeCardsView = ChangingCardsViewController()
 
-PlaygroundPage.current.liveView = changeCardsView
+
+PlaygroundPage.current.liveView = jokerView
 PlaygroundPage.current.needsIndefiniteExecution = true
+
+
+
 
 
 

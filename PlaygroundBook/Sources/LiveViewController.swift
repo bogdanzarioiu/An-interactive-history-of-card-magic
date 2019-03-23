@@ -13,11 +13,13 @@ import PlaygroundSupport
 public class LiveViewController: UIViewController, PlaygroundLiveViewMessageHandler, PlaygroundLiveViewSafeAreaContainer {
     
         public var jokerImage: UIImageView!
+        public var titleLabel: UILabel!
     
     override public func viewDidLoad() {
             super.viewDidLoad()
-        view.backgroundColor = .white
-            addJoker()
+            view.backgroundColor = .white
+            //addJoker()
+            addTitleLabel()
         
         }
     
@@ -29,38 +31,54 @@ public class LiveViewController: UIViewController, PlaygroundLiveViewMessageHand
             UIView.animate(withDuration: 5.0) {
                 self.jokerImage.alpha = 1
             }
-            
             view.addSubview(jokerImage)
-            addConstraints()
+            addConstraintsForJokerImage()
+        
         
         }
     
-    public func addConstraints() {
+    public func addTitleLabel() {
+            titleLabel = UILabel()
+            titleLabel.text = "The magic is about to happen!"
+            view.addSubview(titleLabel)
+            addConstraintsForTitleLabel()
+    }
+    
+    public func addConstraintsForJokerImage() {
             jokerImage.translatesAutoresizingMaskIntoConstraints = false
             jokerImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
             jokerImage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
             jokerImage.widthAnchor.constraint(equalToConstant: 189).isActive = true
             jokerImage.heightAnchor.constraint(equalToConstant: 254).isActive = true
         }
-
-    public func receive(_ message: PlaygroundValue) {
-        switch message {
-        case let .integer(message):
-            if message == 1 {
-                print("Perfect!😃")
-              
-            
-            }
-            else if message == 0 {
-                print("You need to snap your fingers once for magic to happen!")
-            }
-            else if message > 1 {
-                print("Too many snaps, let's go baby steps!😅")
-            }
-        default:
-            print("Only numbers")
-        }
+    
+    public func addConstraintsForTitleLabel() {
+            titleLabel.translatesAutoresizingMaskIntoConstraints = false
+            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+            titleLabel.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+            titleLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
+            titleLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
+        
+        
+    }
+    public func receive(_ message: PlaygroundValue) {
+       //switch message {
+       // case let .integer(message):
+//            if message == 3 {
+//                titleLabel.text = "AWESOME!"
+//                addJoker()
+//            }
+//             if message  < 3 {
+//                titleLabel.text = "You motherfucker, snap more!"
+//            }
+//            else if message > 3 {
+//                titleLabel.text = "Man, calm down!"
+//            }
+//        default:
+//            titleLabel.text = "Only numbers"
+//       }
+//
         
     }
     

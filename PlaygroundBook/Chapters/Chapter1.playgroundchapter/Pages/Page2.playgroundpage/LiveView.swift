@@ -8,12 +8,11 @@
 import UIKit
 import PlaygroundSupport
 
-
 // Instantiate a new instance of the live view from the book's auxiliary sources and pass it to PlaygroundSupport.
 
-var transpoView = CardTranspoViewController()
+var changeCardsView = ChangingCardsViewController()
 
-PlaygroundPage.current.liveView = transpoView
+PlaygroundPage.current.liveView = changeCardsView
 PlaygroundPage.current.needsIndefiniteExecution = true
 
 

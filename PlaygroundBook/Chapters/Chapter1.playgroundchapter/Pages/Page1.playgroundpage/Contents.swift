@@ -6,57 +6,61 @@
 //  The Swift file containing the source code edited by the user of this playground book.
 //
 //#-end-hidden-code
-let str = "Hello, playground"
-
-/*:
- ** Card Magic**
- The precise origins of card magic are subject to debate though it's generally believed that card tricks were first developed by gamblers who wanted to improve their chances of winning when playing card games.
- Our *goal* is to discover together this new world!
- 
- Let's do some magic!
- Snap your fingers to make a playing card materialize.
- 
- 
- 
- 
- 
- 
- 
- */
-
+//:Hello!👋
+//:
+//:Let's talk a bit  about magic. In my opinion, magic is more than sleight of
+//:hand, misdirection and showmanship. Magic is emotion and connects people in a strong way.
+//: Magic creates emphaty.
+//:
+//:*A bit of history*
+//:
+//:The precise origins of card magic are subject to debate though it's generally believed that
+//:card tricks were first developed by gamblers who wanted to improve their chances of winning when
+//:playing card games.
+//:Our **goal** is to experience the most common magic plots in a fun and interactive way!\
+//:Let's do some magic!
+//:
+//:
+//:**1.Making playing cards appear effortlessly.**\
+//:**Experiment:** Snap your fingers to make a playing card materialize.
 //#-hidden-code
-
-//-end-hidden-code
-//*Hint* Modify the below variable to have the value of 1
-//var snapCounter: Int = /*#-editable-code this should be 1 */0/*#-end-editable-code*/
-
-
-
-//#-hidden-code
-
 import PlaygroundSupport
-
-PlaygroundPage.current.liveView = ChangingCardsViewController()
+var jokerView = LiveViewController()
+PlaygroundPage.current.liveView = jokerView
 PlaygroundPage.current.needsIndefiniteExecution = true
-
-//func show(_ message: (Int, String)) {
-//    let page = PlaygroundPage.current
-//    if let proxy = page.liveView as? PlaygroundRemoteLiveViewProxy {
-//        proxy.send(.integer(message), .String(message))
-//    }
-//
-//}
 //#-end-hidden-code
+//#-hidden-code
+func snapFingers(_ message: Int) {
+        jokerView.send(.integer(message))
 
-// Select a playing card to be displayed on the live view
+    }
+//#-end-hidden-code
+//:**Hint!** Feel free to play with the numbers but remember that 3 is the magic one!
+//Modify the below variable
 //#-code-completion(everything, hide)
-//var playingCard: Int = /*#-editable-code Select a number*/12/*#-end-editable-code*/
+var numberOfSnaps: Int = /*#-editable-code */0/*#-end-editable-code*/
+
 
 //#-hidden-code
-//show(playingCard)
-//#-end-hidden-code
+snapFingers(numberOfSnaps)
+//jokerView.addJoker()
 
-//: [Previous](@previous) || [Next](@next)
+if numberOfSnaps == 3 {
+    jokerView.titleLabel.text = "Awesome,motherfucker!👏"
+    jokerView.addJoker()
+    PlaygroundPage.current.assessmentStatus = .pass(message: "That's a very good start!  Feel free to move on the [**next page**](@next).")
+}
+if numberOfSnaps > 3 {
+    jokerView.titleLabel.text  = "Enough, motherfucker!"
+    PlaygroundPage.current.assessmentStatus = .pass(message: "Pay attention to the hint.")
+}
+if numberOfSnaps < 3 {
+    jokerView.titleLabel.text = "Snap more, motherfucker!"
+    PlaygroundPage.current.assessmentStatus = .pass(message: "Pay attention to the hint.")
+}
+
+//#-end-hidden-code
+//:[Next](@next)
 
 
 

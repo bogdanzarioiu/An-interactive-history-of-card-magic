@@ -23,6 +23,7 @@
 		B689FBCD223FE62100BF24D3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B689FBCC223FE62100BF24D3 /* Media.xcassets */; };
 		B689FBCF223FF3C600BF24D3 /* ChangingCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689FBCE223FF3C600BF24D3 /* ChangingCardsViewController.swift */; };
 		B689FCAB22439C0300BF24D3 /* CardTranspoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689FCAA22439C0300BF24D3 /* CardTranspoViewController.swift */; };
+		B6EE11A922453E6F0067FE02 /* TornAndRestoredCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EE11A822453E6F0067FE02 /* TornAndRestoredCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -117,6 +118,7 @@
 		B689FBCC223FE62100BF24D3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		B689FBCE223FF3C600BF24D3 /* ChangingCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingCardsViewController.swift; sourceTree = "<group>"; };
 		B689FCAA22439C0300BF24D3 /* CardTranspoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTranspoViewController.swift; sourceTree = "<group>"; };
+		B6EE11A822453E6F0067FE02 /* TornAndRestoredCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TornAndRestoredCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 				5EF2F9AD2054BBF300191409 /* LiveViewController.swift */,
 				B689FBCE223FF3C600BF24D3 /* ChangingCardsViewController.swift */,
 				B689FCAA22439C0300BF24D3 /* CardTranspoViewController.swift */,
+				B6EE11A822453E6F0067FE02 /* TornAndRestoredCardViewController.swift */,
 				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
 			);
 			path = Sources;
@@ -426,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6EE11A922453E6F0067FE02 /* TornAndRestoredCardViewController.swift in Sources */,
 				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
 				5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */,
 				B689FCAB22439C0300BF24D3 /* CardTranspoViewController.swift in Sources */,

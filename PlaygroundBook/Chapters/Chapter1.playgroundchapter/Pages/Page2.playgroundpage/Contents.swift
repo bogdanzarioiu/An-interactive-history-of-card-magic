@@ -6,47 +6,48 @@
 //  The Swift file containing the source code edited by the user of this playground book.
 //
 //#-end-hidden-code
-let str = "Hello, playground"
 
-/*:
- ** Card Magic**
- The precise origins of card magic are subject to debate though it's generally believed that card tricks were first developed by gamblers who wanted to improve their chances of winning when playing card games.
- Our *goal* is to discover together this new world!
- 
- Let's do some magic!
- Snap your fingers to make a playing card materialize.
- 
- 
- 
- 
- 
- 
- 
- */
+//:**"Wonder is the first of all the passions."**
+//:
+//: * callout(Descartes - The Passions of The Soul, Article 53)
+//:
+//: ![flip book](jokers.png)\
+//:
+//:
+//:Being able to give someone the **"How did you do that??"** feeling is priceless. It will connect you
+//:with the person, it will create empathy.
+//:
+//:**2.Changing playing cards.**\
+//:**Experiment:** Perform a color change! Or many!
 
 //#-hidden-code
-
-//-end-hidden-code
-//*Hint* Modify the below variable to have the value of 1
-//var snapCounter: Int = /*#-editable-code this should be 1 */0/*#-end-editable-code*/
-
-
-
-//#-hidden-code
-
 import PlaygroundSupport
+import  UIKit
 
-PlaygroundPage.current.liveView = CardTranspoViewController()
+var changeCardsView = ChangingCardsViewController()
+var jokerView: UIImageView!
+
+PlaygroundPage.current.liveView = changeCardsView
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-//func show(_ message: (Int, String)) {
-//    let page = PlaygroundPage.current
-//    if let proxy = page.liveView as? PlaygroundRemoteLiveViewProxy {
-//        proxy.send(.integer(message), .String(message))
-//    }
-//
-//}
+func performMagic(_ message: Int) {
+    changeCardsView.send(.integer(message))
+    
+}
+
 //#-end-hidden-code
+
+//Call the function with different values up to 5 to see the magic!
+var cardsToChange: Int = /*#-editable-code Select a number*/0/*#-end-editable-code*/
+
+//#-hidden-code
+performMagic(cardsToChange)
+//-end-hidden-code
+if cardsToChange == 1 {
+    changeCardsView.changeCards()
+    PlaygroundPage.current.assessmentStatus = .pass(message: "Awesome! [**next page**](@next).")
+}
+
 
 // Select a playing card to be displayed on the live view
 //#-code-completion(everything, hide)
@@ -55,7 +56,10 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 //#-hidden-code
 //show(playingCard)
 //#-end-hidden-code
+//#-hidden-code
 
+
+//#-end-hidden-code
 //: [Previous](@previous) || [Next](@next)
 
 

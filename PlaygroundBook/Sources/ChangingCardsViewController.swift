@@ -13,35 +13,36 @@ public class ChangingCardsViewController: UIViewController, PlaygroundLiveViewMe
     
    public var twoOfHeartsView: UIImageView!
    public var jackOfClubsView: UIImageView!
+   public var jackOfDiamondsView: UIImageView!
     
     
     override  public func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         addCards()
-        changeCards()
+        //changeCards()
     }
     
     public func addCards() {
-        let jackImage = UIImage(named: "jackOfClubs")
-        jackOfClubsView = UIImageView(image: jackImage!)
+        let jackDImage = UIImage(named: "jackOfDiamonds")
+        jackOfDiamondsView = UIImageView(image: jackDImage!)
         
         let twoImage = UIImage(named: "twoOfHearts")
         twoOfHeartsView = UIImageView(image: twoImage!)
-        view.addSubview(jackOfClubsView)
+        view.addSubview(jackOfDiamondsView)
         view.addSubview(twoOfHeartsView)
-        jackOfClubsView.alpha = 0
+        jackOfDiamondsView.alpha = 0
         twoOfHeartsView.alpha = 0
         addingConstraintsForTheCards()
         
     }
     
    public  func addingConstraintsForTheCards() {
-        jackOfClubsView.translatesAutoresizingMaskIntoConstraints = false
-        jackOfClubsView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        jackOfClubsView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        jackOfClubsView.widthAnchor.constraint(equalToConstant: 189).isActive = true
-        jackOfClubsView.heightAnchor.constraint(equalToConstant: 254).isActive = true
+        jackOfDiamondsView.translatesAutoresizingMaskIntoConstraints = false
+        jackOfDiamondsView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        jackOfDiamondsView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        jackOfDiamondsView.widthAnchor.constraint(equalToConstant: 189).isActive = true
+        jackOfDiamondsView.heightAnchor.constraint(equalToConstant: 254).isActive = true
         
         twoOfHeartsView.translatesAutoresizingMaskIntoConstraints = false
         twoOfHeartsView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -54,7 +55,7 @@ public class ChangingCardsViewController: UIViewController, PlaygroundLiveViewMe
         twoOfHeartsView.alpha = 1
         UIView.animate(withDuration: 2.5) {
             self.twoOfHeartsView.alpha = 0
-            self.jackOfClubsView.alpha = 1
+            self.jackOfDiamondsView.alpha = 1
         }
     }
 
