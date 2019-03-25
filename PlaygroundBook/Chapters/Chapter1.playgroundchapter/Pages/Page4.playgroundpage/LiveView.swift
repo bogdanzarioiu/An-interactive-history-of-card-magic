@@ -11,9 +11,9 @@ import PlaygroundSupport
 
 // Instantiate a new instance of the live view from the book's auxiliary sources and pass it to PlaygroundSupport.
 
-var tornView = TornAndRestoredCardViewController()
+var changeView = UnexpectedTransformationViewController()
 
-PlaygroundPage.current.liveView = tornView
+PlaygroundPage.current.liveView = changeView
 PlaygroundPage.current.needsIndefiniteExecution = true
 //tornView.placingTornCards()
 //tornView.constraintsForTornCards()

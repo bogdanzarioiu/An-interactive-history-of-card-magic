@@ -23,7 +23,12 @@
 		B689FBCD223FE62100BF24D3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B689FBCC223FE62100BF24D3 /* Media.xcassets */; };
 		B689FBCF223FF3C600BF24D3 /* ChangingCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689FBCE223FF3C600BF24D3 /* ChangingCardsViewController.swift */; };
 		B689FCAB22439C0300BF24D3 /* CardTranspoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B689FCAA22439C0300BF24D3 /* CardTranspoViewController.swift */; };
-		B6EE11A922453E6F0067FE02 /* TornAndRestoredCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EE11A822453E6F0067FE02 /* TornAndRestoredCardViewController.swift */; };
+		B6EE11A922453E6F0067FE02 /* UnexpectedTransformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EE11A822453E6F0067FE02 /* UnexpectedTransformationViewController.swift */; };
+		B6EE122B2247260D0067FE02 /* MisteryLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EE122A2247260D0067FE02 /* MisteryLocationViewController.swift */; };
+		B6EE124B224743590067FE02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EE124A224743590067FE02 /* ViewController.swift */; };
+		B6EE124D224781360067FE02 /* Welles-Sandburg-1942.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6EE124C224781360067FE02 /* Welles-Sandburg-1942.jpg */; };
+		B6EE12532248306B0067FE02 /* jokersCover.png in Resources */ = {isa = PBXBuildFile; fileRef = B6EE12522248306B0067FE02 /* jokersCover.png */; };
+		B6EE125522483CF40067FE02 /* conjurer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6EE125422483CF40067FE02 /* conjurer.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -118,7 +123,12 @@
 		B689FBCC223FE62100BF24D3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		B689FBCE223FF3C600BF24D3 /* ChangingCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingCardsViewController.swift; sourceTree = "<group>"; };
 		B689FCAA22439C0300BF24D3 /* CardTranspoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTranspoViewController.swift; sourceTree = "<group>"; };
-		B6EE11A822453E6F0067FE02 /* TornAndRestoredCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TornAndRestoredCardViewController.swift; sourceTree = "<group>"; };
+		B6EE11A822453E6F0067FE02 /* UnexpectedTransformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnexpectedTransformationViewController.swift; sourceTree = "<group>"; };
+		B6EE122A2247260D0067FE02 /* MisteryLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisteryLocationViewController.swift; sourceTree = "<group>"; };
+		B6EE124A224743590067FE02 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6EE124C224781360067FE02 /* Welles-Sandburg-1942.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Welles-Sandburg-1942.jpg"; sourceTree = "<group>"; };
+		B6EE12522248306B0067FE02 /* jokersCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jokersCover.png; sourceTree = "<group>"; };
+		B6EE125422483CF40067FE02 /* conjurer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = conjurer.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +163,7 @@
 		5E086DC12051C5A7004D8D25 /* PlaygroundBook */ = {
 			isa = PBXGroup;
 			children = (
+				B6EE124F22482F7B0067FE02 /* Resources */,
 				5E086DCF2051DF0F004D8D25 /* Manifest.plist */,
 				5EF2F9A22054BB3E00191409 /* Sources */,
 				5EF2F9792054B64800191409 /* PrivateResources */,
@@ -249,6 +260,8 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
+				B6EE124C224781360067FE02 /* Welles-Sandburg-1942.jpg */,
+				B6EE125422483CF40067FE02 /* conjurer.jpg */,
 				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
 				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
 				B689FBCC223FE62100BF24D3 /* Media.xcassets */,
@@ -262,7 +275,9 @@
 				5EF2F9AD2054BBF300191409 /* LiveViewController.swift */,
 				B689FBCE223FF3C600BF24D3 /* ChangingCardsViewController.swift */,
 				B689FCAA22439C0300BF24D3 /* CardTranspoViewController.swift */,
-				B6EE11A822453E6F0067FE02 /* TornAndRestoredCardViewController.swift */,
+				B6EE11A822453E6F0067FE02 /* UnexpectedTransformationViewController.swift */,
+				B6EE124A224743590067FE02 /* ViewController.swift */,
+				B6EE122A2247260D0067FE02 /* MisteryLocationViewController.swift */,
 				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
 			);
 			path = Sources;
@@ -274,6 +289,14 @@
 				5EF2F9A52054BBB200191409 /* Sources */,
 			);
 			name = "Supporting Content";
+			sourceTree = "<group>";
+		};
+		B6EE124F22482F7B0067FE02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6EE12522248306B0067FE02 /* jokersCover.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +407,9 @@
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
 				B689FBCD223FE62100BF24D3 /* Media.xcassets in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
+				B6EE124D224781360067FE02 /* Welles-Sandburg-1942.jpg in Resources */,
+				B6EE12532248306B0067FE02 /* jokersCover.png in Resources */,
+				B6EE125522483CF40067FE02 /* conjurer.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +455,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6EE11A922453E6F0067FE02 /* TornAndRestoredCardViewController.swift in Sources */,
+				B6EE11A922453E6F0067FE02 /* UnexpectedTransformationViewController.swift in Sources */,
+				B6EE122B2247260D0067FE02 /* MisteryLocationViewController.swift in Sources */,
 				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
 				5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */,
+				B6EE124B224743590067FE02 /* ViewController.swift in Sources */,
 				B689FCAB22439C0300BF24D3 /* CardTranspoViewController.swift in Sources */,
 				B689FBCF223FF3C600BF24D3 /* ChangingCardsViewController.swift in Sources */,
 			);
@@ -494,6 +522,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
 				SKIP_INSTALL = NO;
@@ -507,6 +536,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0;
 				INSTALL_PATH = /;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
 				SKIP_INSTALL = NO;
@@ -563,7 +593,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -618,7 +648,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -636,7 +666,7 @@
 				DEVELOPMENT_TEAM = F3S2XGQQQ4;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INFOPLIST_FILE = LiveViewTestApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,7 +690,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3S2XGQQQ4;
 				INFOPLIST_FILE = LiveViewTestApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

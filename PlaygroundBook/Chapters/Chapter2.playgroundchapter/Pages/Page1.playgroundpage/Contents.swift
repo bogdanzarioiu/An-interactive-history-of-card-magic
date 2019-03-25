@@ -6,54 +6,39 @@
 //  The Swift file containing the source code edited by the user of this playground book.
 //
 //#-end-hidden-code
-let str = "Hello, playground"
+
 
 /*:
- ** Card Magic**
- The precise origins of card magic are subject to debate though it's generally believed that card tricks were first developed by gamblers who wanted to improve their chances of winning when playing card games.
- Our *goal* is to discover together this new world!
- 
- Let's do some magic!
- Snap your fingers to make a playing card materialize.
- 
- 
- 
- 
- 
- 
- 
+ # Mixing magic and technology
  */
 
+//:  Now, let’s talk a bit about the near future. I really do believe that the technology can expand the
+//:ways in which magic is performed and experienced. I’m sure you heard this many times before, but the possibilities are truly endless.
+//:We will do a small experiment. Place yourself in the shoes of a spectator.
+//:Imagine being able to freely select a playing card. It’s just in your mind, only you know its value.
+//:The magician shows you his phone and opens the phone’s camera. He wants you to record him since he's about to do
+//:something cool.
+//:Suddenly, from nowhere, you see a playing card you were just thinking of appearing and moving into the real world.
+//:
+//:It’s a very simple concept and it can have many twists, but the idea behind this is to let your imagination fly, 
+//:to leave you with something to think about.
+//:
+//:***Thank you!***
+
+
 //#-hidden-code
-func snapFingers() {
-
-}
-//-end-hidden-code
-//*Hint* Modify the below variable to have the value of 1
-var snapCounter: Int = /*#-editable-code this should be 1 */0/*#-end-editable-code*/
 
 
-
-//#-hidden-code
 
 import PlaygroundSupport
+import ARKit
+import SceneKit
 
-func show(_ message: (Int, String)) {
-    let page = PlaygroundPage.current
-    if let proxy = page.liveView as? PlaygroundRemoteLiveViewProxy {
-        proxy.send(.integer(message), .String(message))
-    }
+//var viewController = ViewController()
+//PlaygroundPage.current.liveView = viewController
+//PlaygroundPage.current.needsIndefiniteExecution = true
 
-}
-//#-end-hidden-code
-
-// Select a playing card to be displayed on the live view
-//#-code-completion(everything, hide)
-var playingCard: Int = /*#-editable-code Select a number*/12/*#-end-editable-code*/
-
-//#-hidden-code
-show(playingCard)
-//#-end-hidden-code
+(PlaygroundPage.current.liveView as? PlaygroundRemoteLiveViewProxy)?.send(.string(""))
 
 //: [Previous](@previous) || [Next](@next)
 
@@ -61,7 +46,4 @@ show(playingCard)
 
 
 
-
-
-
-
+//#-end-hidden-code

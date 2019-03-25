@@ -7,18 +7,27 @@
 //
 //#-end-hidden-code
 
-//:**"Wonder is the first of all the passions."**
-//:
-//: * callout(Descartes - The Passions of The Soul, Article 53)
-//:
-//: ![flip book](jokers.png)\
+
+
+//:**"Wonder is the first of all the passions." - Descartes**
 //:
 //:
-//:Being able to give someone the **"How did you do that??"** feeling is priceless. It will connect you
-//:with the person, it will create empathy.
 //:
-//:**2.Changing playing cards.**\
-//:**Experiment:** Perform a color change! Or many!
+//:
+//:
+//:A bit of mystery ehnances every performance. Many magicians choose to rather be ambigous
+//:when they perform a trick. Although this doesn't suit any personality, it helps
+//:for sure in building suspense and being rewarded at the end with bigger reactions.
+
+/*:
+ # Color Changes
+ */
+
+//:A color change is the effect of changing one card to another in front of the spectators eyes. There are many
+//:different techniques to accomplish this effect, one more difficult than the other.
+//:
+//:**Experiment: Perform a color change! Or many!**
+//:**Tap Run My Code**
 
 //#-hidden-code
 import PlaygroundSupport
@@ -26,41 +35,47 @@ import  UIKit
 
 var changeCardsView = ChangingCardsViewController()
 var jokerView: UIImageView!
-
 PlaygroundPage.current.liveView = changeCardsView
 PlaygroundPage.current.needsIndefiniteExecution = true
 
 func performMagic(_ message: Int) {
     changeCardsView.send(.integer(message))
-    
 }
-
 //#-end-hidden-code
-
-//Call the function with different values up to 5 to see the magic!
+//Set the values of the below variable to different values from two to 4 to experience a color change!
 var cardsToChange: Int = /*#-editable-code Select a number*/0/*#-end-editable-code*/
 
 //#-hidden-code
 performMagic(cardsToChange)
-//-end-hidden-code
-if cardsToChange == 1 {
-    changeCardsView.changeCards()
-    PlaygroundPage.current.assessmentStatus = .pass(message: "Awesome! [**next page**](@next).")
+
+//: [Previous](@previous) || [Next](@next)
+if cardsToChange == 2 {
+    changeCardsView.changeTwoCards()
+    PlaygroundPage.current.assessmentStatus = .pass(message: "Awesome! Feel free to try different values. You can go to the [**next page**](@next) whenever you want")
+    changeCardsView.titleLabel.text = "Great!"
+}
+if cardsToChange  <= 1 {
+    //I will print that we need at least 2 cards to perform a color change
+    PlaygroundPage.current.assessmentStatus = .fail(hints: ["We don't have enough cards for a color change"], solution: nil)
+    changeCardsView.titleLabel.text = "We need at least 2 cards to perform a color change!"
+    
 }
 
 
-// Select a playing card to be displayed on the live view
-//#-code-completion(everything, hide)
-//var playingCard: Int = /*#-editable-code Select a number*/12/*#-end-editable-code*/
+if cardsToChange == 3 {
+    changeCardsView.changeThreeCards()
+    
+}
 
-//#-hidden-code
-//show(playingCard)
-//#-end-hidden-code
-//#-hidden-code
+if cardsToChange == 4 {
+    changeCardsView.changeFourCards()
+}
 
+if cardsToChange >= 5 {
+    changeCardsView.titleLabel.text = "We don't have that many cards"
+}
+//-end-hidden-code
 
-//#-end-hidden-code
-//: [Previous](@previous) || [Next](@next)
 
 
 
